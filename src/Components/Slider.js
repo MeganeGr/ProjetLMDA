@@ -20,7 +20,6 @@ const data = [
   { myImg: Slide7 },
   { myImg: Slide8 },
 ]
-
 class Rick extends Component {
   render() {
     const settings = {
@@ -57,14 +56,7 @@ class Rick extends Component {
     };
 
     return (
-      <div>
-        <h3 className="sliderCo" ><strong>Partenaires</strong></h3>
-        <Slidero {...settings} className="sliderCoponent" >
-          {data.map((el, i) => {
-            return (
-              <li key={i}>
-                <img className="sliderCoponentImg" src={el.myImg} alt="Images slider" />
-              </li>
+
             );
           })}
         </Slidero>
@@ -73,4 +65,4 @@ class Rick extends Component {
   }
 }
 
-export default Rick;
+export default theSlider;
