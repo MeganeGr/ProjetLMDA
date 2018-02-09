@@ -10,63 +10,67 @@ import Slide6 from '../Images/ISlid6.png';
 import Slide8 from '../Images/ISlid8.png';
 import Slide7 from '../Images/ISlid7.png';
 
-const data=[
-  {myImg: Slide1},
-  {myImg: Slide2},
-  {myImg: Slide3},
-  {myImg: Slide4},
-  {myImg: Slide5},
-  {myImg: Slide6},
-  {myImg: Slide7},
-  {myImg: Slide8},
+const data = [
+  { myImg: Slide1 },
+  { myImg: Slide2 },
+  { myImg: Slide3 },
+  { myImg: Slide4 },
+  { myImg: Slide5 },
+  { myImg: Slide6 },
+  { myImg: Slide7 },
+  { myImg: Slide8 },
 ]
 
 class Rick extends Component {
-    render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay : true,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            responsive: [   {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                  } }, {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                  } }, {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                } ]
-          };
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }]
+    };
 
-        return (
-        <div>
-          <h3 className="sliderCo" ><strong>Partenaires</strong></h3>
+    return (
+      <div>
+        <h3 className="sliderCo" ><strong>Partenaires</strong></h3>
         <Slidero {...settings} className="sliderCoponent" >
-          {data.map((el, i)=>{
-            return(
-              <li key={i}><img className="sliderCoponentImg" src={el.myImg} alt="Images slider"/></li>
+          {data.map((el, i) => {
+            return (
+              <li key={i}>
+                <img className="sliderCoponentImg" src={el.myImg} alt="Images slider" />
+              </li>
             );
-          } ) }            
-          </Slidero>
-          </div>
-        );
-    }
+          })}
+        </Slidero>
+      </div>
+    );
+  }
 }
 
 export default Rick;
