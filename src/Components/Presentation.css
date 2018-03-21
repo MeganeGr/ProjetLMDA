@@ -1,9 +1,12 @@
 .Pres-Container{
-  padding: 2%;
+  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FAFAFA;
+}
+.Pres-Container:first-child{
+  padding-top: 0;
 }
 .Pres-Back{
   width: 70%;
@@ -14,6 +17,11 @@
   color: black;
   font-size: 3em;
   text-align: center;
+}
+@media only screen and (max-width: 640px){
+  .Pres-Title{
+    font-size: 2em
+  }
 }
 .Pres-Title:nth-last-child(1n){
   padding-top: 3%;
@@ -28,23 +36,23 @@
     border-radius: 3px;
 }
 .Pres-Lambi{
-  width: 8%;
-  position: absolute;
-  padding-left: 2%;
-  background-color: #708e5a;
+  width: 15%;
+  background-color: #016837;
   border-radius: 100%;
-  border: 10px solid #FAFAFA;
+  padding-left: 3%;
+  border: 10px solid #FAFAFA
 }
-.Pres-LambiContainer{
+.TraitContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  width: 70%;
-  height: 0;
+  
 }
-.Pres-traitContainer{
+.LambiContainer{
   display: flex;
   justify-content: center;
-  background-color: #FAFAFA;
+  align-items: center;
+  height: 1px;
+  background-color: black;
+  width: 75%;
 }

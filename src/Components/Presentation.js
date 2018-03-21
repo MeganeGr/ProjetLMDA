@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Footer from './Footer';
 import './Presentation.css';
 import lambi from '../Images/lambi(blanc).png';
-import paysage1 from '../Images/nouveau_paysage.png';
-import paysage2 from '../Images/photoLMDA(rogne).jpg'
+import paysage1 from '../Images/IMG_20180117_161557.png';
+import paysage2 from '../Images/IMG_20180204_124949.png'
 
 
 class Presentation extends Component {
@@ -35,11 +35,14 @@ qui épuise les ressources naturelles, creuse les écarts de richesse et ampute 
 actuelles et futures.</p>
                 </div>
             </div>
-            <div className="Pres-traitContainer">
-            <div className="Pres-LambiContainer">
-            <img src={lambi} alt="lambi" className="Pres-Lambi"/>
-            </div>
-            </div>
+            
+            <div className="TraitContainer">
+                <div className="LambiContainer">
+                <img src={lambi} alt="lambi" className="Pres-Lambi"/>
+                </div>
+            </div> 
+            
+            
 
 
             <div className="Pres-Container">
